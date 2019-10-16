@@ -26,11 +26,6 @@ public class Test_steps {
 	private static WebDriver driver = null;
 	FluentWait<WebDriver> wait;	
 
-	@Before
-	public void beforeScenario() {	
-		
-	}
-		
 	
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {	
@@ -84,9 +79,9 @@ public class Test_steps {
 		System.out.println("*********Creating New application from scratch successfully***********");
 	}	
 	   
-
+	
 	@When("^I Select a new BlankForm template$")
-	public void i_Select_a_new_blankForm_template() throws Throwable {
+	public void i_Select_a_new_BlankForm_template() throws Throwable {
 		
 		ZohoPOM.Field_createNewForm(driver).click();
 		ZohoPOM.Button_BlankFormType(driver).click();

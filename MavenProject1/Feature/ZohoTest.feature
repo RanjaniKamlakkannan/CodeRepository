@@ -10,7 +10,7 @@ Then user is displayed with Zoho appa page
 
 Scenario: Create a new application from scratch
 Given the user click on the create application field
-When I Select a new "BlankForm" template 
+When I Select a new BlankForm template 
 And I enter inputs for all the basic fields 
 Then user is created with new Form successfully
 And I Logout the application
